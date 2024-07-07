@@ -1,0 +1,29 @@
+.Dd July 7, 2024
+.Dt CLAMB 1
+.Os
+.Sh NAME
+.Nm clamb
+.Nd Universal Lambda Interpreter
+.Sh SYNOPSIS
+.Nm
+.Op Fl gpsu
+.Op Ar file
+.Sh DESCRIPTION
+The
+.Nm
+is an inplementation of the Universal Lambda
+programming language.
+.Pp
+Options are as follows:
+.Bl -tag -width Ds
+.It Fl g
+Notify garbage collector usage.
+.It Fl p
+Parse only; output program as combinators to standard output, then exit.
+.It Fl s
+Show statistics before program ends.
+.It Fl u
+Suppress output buffering.
+.El
+.Sh EXIT STATUS
+.Ex -std
